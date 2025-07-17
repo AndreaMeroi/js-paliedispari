@@ -1,4 +1,4 @@
-console.log('Hi there')
+console.log('Is the word a palindrome?')
 //Palindroma 
 
 /*
@@ -19,27 +19,42 @@ Execution:
 
 //chiedere di inserire una parola
 
-const typeword = prompt('Type a word')
+const miaParola = prompt('type a word');
+
+console.log(miaParola)
 
 
+// scrivere la parola al contrario
 
+function reverseword(rovescioParola) {
 
-function isPalindrome() {
+    let rovescioLettere = [];
 
-    // scrivere la parola al contrario
-    const reverseword = typeword.split('').reverse().join('');
-
-    // la parola al contrario è uguale all'originale ?
-    return reverseword === typeword;
+    for (let i = miaParola.length - 1; i >= 0; i--) {
+        rovescioLettere += miaParola[i]
+    }
+    return rovescioLettere
 }
 
+const arrayRevLetter = reverseword(miaParola)
+console.log(arrayRevLetter)
 
-console.log(isPalindrome('radar'));
+if (arrayRevLetter === miaParola) {
+
+    console.log('la parola è palindroma')
+
+
+} else {
+
+    console.log('la parola non è palindroma')
+}
+
 
 
 
 //Pari e dispari
 
+//console.log('Odd or Even?')
 /*
 -chiedere all'utente di inserire un numero da 1 a 5
 - generare un numero d 1 a 5
@@ -54,5 +69,19 @@ Tools:
 -(f) per definire se il numero è pari o dispari
 */
 
-
 //
+
+//execution
+
+// chiedere all'utente di inserire un numero da 1 a 5
+
+//const typenumb = prompt ('Type a numeber between 1 and 5')
+
+// generare un numero d 1 a 5
+
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * 5) + 1;
+
+
+}
+
