@@ -16,7 +16,7 @@ Execution:
 
 */
 
-
+/*
 //chiedere di inserire una parola
 
 const miaParola = prompt('type a word');
@@ -48,12 +48,12 @@ if (arrayRevLetter === miaParola) {
     console.log('la parola non è palindroma')
 }
 
-
+*/
 
 
 //Pari e dispari
 
-//console.log('Odd or Even?')
+console.log('Odd or Even?')
 /*
 -chiedere all'utente di inserire un numero da 1 a 5
 - generare un numero d 1 a 5
@@ -74,9 +74,50 @@ Tools:
 
 // chiedere all'utente di inserire un numero da 1 a 5
 
-//const typenumb = prompt ('Type a numeber between 1 and 5')
+const numbSelection = parseInt(prompt('Type a number between 1 and 5'))
 
-// generare un numero d 1 a 5
+console.log(numbSelection)
+
+//generare un numero d 1 a 5 random
+
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * 5) + 1;
+
+}
+
+let randomNumb = getRndInteger();
+console.log(randomNumb);
+
+//sommare i due numeri
+
+function sumNumb(num1, num2) {
+
+    return num1 + num2;
+
+}
+
+let result = sumNumb(numbSelection, randomNumb)
+
+console.log(result)
+
+
+//definire se il numero è pari o dispari 
+
+function evenOdd(numero) {
+    if (numero % 2 === 0) {
+        return "pari";
+    } else {
+        return "dispari";
+    }
+}
+
+let mioNumero = result;
+let outcome = evenOdd(mioNumero);
+console.log(mioNumero + " è " + outcome);
+
+
+// dihiarare se il numero è pari o dispari 
+
 
 
 
