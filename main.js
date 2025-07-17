@@ -1,4 +1,4 @@
-console.log('Is the word a palindrome?')
+console.log('-Is the word a palindrome?')
 //Palindroma 
 
 /*
@@ -53,7 +53,7 @@ if (arrayRevLetter === miaParola) {
 
 //Pari e dispari
 
-console.log('Odd or Even?')
+console.log('-Odd or Even?')
 /*
 -chiedere all'utente di inserire un numero da 1 a 5
 - generare un numero d 1 a 5
