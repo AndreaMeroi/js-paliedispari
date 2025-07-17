@@ -16,7 +16,7 @@ Execution:
 
 */
 
-/*
+
 //chiedere di inserire una parola
 
 const miaParola = prompt('type a word');
@@ -48,7 +48,7 @@ if (arrayRevLetter === miaParola) {
     console.log('la parola non è palindroma')
 }
 
-*/
+
 
 
 //Pari e dispari
@@ -111,12 +111,13 @@ function evenOdd(numero) {
     }
 }
 
+// dihiarare se il numero è pari o dispari 
+
 let mioNumero = result;
 let outcome = evenOdd(mioNumero);
 console.log(mioNumero + " è " + outcome);
 
 
-// dihiarare se il numero è pari o dispari 
 
 
 
