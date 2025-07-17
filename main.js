@@ -37,7 +37,6 @@ function reverseword(rovescioParola) {
 }
 
 const arrayRevLetter = reverseword(miaParola)
-console.log(arrayRevLetter)
 
 if (arrayRevLetter === miaParola) {
 
@@ -79,9 +78,5 @@ Tools:
 
 // generare un numero d 1 a 5
 
-function getRndInteger(min, max) {
-    return Math.floor(Math.random() * 5) + 1;
 
-
-}
 
