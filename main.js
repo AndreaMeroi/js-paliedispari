@@ -32,13 +32,16 @@ function reverseword(rovescioParola) {
 
     for (let i = miaParola.length - 1; i >= 0; i--) {
         rovescioLettere += miaParola[i]
+
     }
     return rovescioLettere
 }
 
-const arrayRevLetter = reverseword(miaParola)
+// verificare che la parola al contrario sia uguale a quella digitata
+// CORREZIONE: INCORPORARE 42 -52 IN UNA FUNZIONE
+const RevLetter = reverseword(miaParola)
 
-if (arrayRevLetter === miaParola) {
+if (RevLetter === miaParola) {
 
     console.log('la parola è palindroma')
 
@@ -106,9 +109,9 @@ console.log(result)
 function evenOdd(numero) {
     if (numero % 2 === 0) {
         return "pari";
-    } else {
-        return "dispari";
     }
+    return "dispari";
+}
 }
 
 // dihiarare se il numero è pari o dispari 
